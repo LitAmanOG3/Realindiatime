@@ -1,0 +1,16 @@
+name: RealIndiaTime
+version: '${version}'
+main: fun.litmc.realindiatime.RealIndiaTimePlugin
+api-version: '1.21.11'
+author: LITMC
+website: https://store.litmc.fun
+description: Synchronizes Minecraft daylight with real-world India time and blocks sleeping at night.
+commands:
+  rit:
+    description: RealIndiaTime admin commands
+    usage: /rit <reload|status|sync>
+    permission: realindiatime.admin
+permissions:
+  realindiatime.admin:
+    description: Allows RealIndiaTime admin commands
+    default: op

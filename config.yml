@@ -1,0 +1,40 @@
+# RealIndiaTime - LITMC
+# Timezone uses Java IANA names. India = Asia/Kolkata (UTC+05:30).
+timezone: Asia/Kolkata
+
+# worlds: only these worlds are synchronized. Put your survival world name here.
+worlds:
+  - survival
+
+# REAL mode calculates sunrise/sunset from latitude/longitude and date.
+# FIXED mode uses the configured clock times below.
+mode: REAL
+
+location:
+  latitude: 25.5941
+  longitude: 85.1376
+
+fixed:
+  sunrise: '06:00'
+  sunset: '18:00'
+
+# How often the plugin recalculates and applies time. Lower = tighter sync, but more work.
+update-seconds: 10
+
+# Freeze vanilla Minecraft time progression so nobody can drift the clock by normal gameplay.
+freeze-vanilla-daylight-cycle: true
+
+# Stop players from using beds to skip the real night.
+block-sleep-at-night: true
+
+# Also block player commands such as /time set and /time add while enabled.
+block-player-time-commands: true
+
+# If true, the plugin continuously restores the correct time if another plugin changes it.
+anti-drift: true
+
+messages:
+  sleep-blocked: '&cYou cannot sleep while it is night in real life.'
+  reloaded: '&aRealIndiaTime configuration reloaded.'
+  synced: '&aReal-world time synchronized.'
+  status: '&eRealIndiaTime &7| &fMode: &a%mode% &7| &fIndia time: &a%time% &7| &fPhase: &a%phase%'
